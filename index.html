@@ -5,14 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="سینا گروه بهسان | Sina Group Behsan" />
   <title>سینا گروه بهسان | Sina Group Behsan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{brand:{50:'#f0f7ff',100:'#e0effe',500:'#0c8ce7',600:'#006fc5',700:'#0158a0'},energy:{500:'#f59e0b'}},fontFamily:{fa:['Vazirmatn','sans-serif']},boxShadow:{'3d':'0 10px 40px -10px rgba(12,140,231,.25)'}}}}</script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#f0f7ff', 100:'#e0effe', 500:'#0c8ce7', 600:'#006fc5', 700:'#0158a0' },
+            energy: { 500:'#f59e0b' }
+          },
+          fontFamily: { fa: ['Vazirmatn','Tahoma','sans-serif'] },
+          boxShadow: { '3d': '0 10px 40px -10px rgba(12,140,231,.25)', card: '0 4px 24px rgba(15,23,42,.06)' }
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="https://web.archive.org/web/20241206171545im_/https://sgb-co.com/wp-content/uploads/2023/11/cropped-final-32x32.png" />
+  <script src="img-hero.js"></script>
+  <script src="img-elec.js"></script>
+  <script src="img-civil.js"></script>
+  <script src="img-oil.js"></script>
+  <script src="img-mech.js"></script>
+  <script src="img-proj.js"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-fa antialiased">
-<header id="navbar" class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/60">
+
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-xl border-b border-slate-200/60">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-[72px]">
     <a href="#home" class="flex items-center gap-3">
       <img src="https://web.archive.org/web/20241206171545im_/https://sgb-co.com/wp-content/uploads/2023/04/logo2.png" alt="SGB" class="h-11" />
@@ -25,9 +45,9 @@
       <a href="#contact" class="nav-link" data-i18n="nav_contact">تماس</a>
     </nav>
     <div class="flex items-center gap-2">
-      <button id="langToggle" class="px-3 py-1.5 rounded-lg border border-slate-200 text-sm font-semibold"><span id="langLabel">EN</span></button>
+      <button id="langToggle" class="px-3 py-1.5 rounded-lg border border-slate-200 text-sm font-semibold bg-white shadow-sm"><span id="langLabel">EN</span></button>
       <a href="#contact" class="hidden sm:inline-flex px-5 py-2.5 rounded-xl bg-brand-600 text-white text-sm font-semibold shadow-3d" data-i18n="nav_cta">مشاوره رایگان</a>
-      <button id="menuBtn" class="lg:hidden p-2 border rounded-lg"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <button id="menuBtn" class="lg:hidden p-2 border rounded-lg bg-white"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
   </div>
   <div id="mobileMenu" class="lg:hidden hidden border-t bg-white px-4 py-4 space-y-1">
@@ -41,8 +61,8 @@
 
 <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
   <div class="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-slate-100"></div>
-  <div class="absolute inset-0 opacity-25 bg-cover bg-center" style="background-image:url('https://litter.catbox.moe/t6y9uv.jpg')"></div>
-  <div class="absolute inset-0 bg-gradient-to-l from-white via-white/90 to-white/60"></div>
+  <div id="heroBg" class="absolute inset-0 opacity-25 bg-cover bg-center"></div>
+  <div class="absolute inset-0 bg-gradient-to-l from-white via-white/90 to-white/55"></div>
   <div class="relative max-w-7xl mx-auto px-4 py-16 w-full grid lg:grid-cols-2 gap-12 items-center">
     <div class="space-y-6">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 border border-brand-200 text-brand-700 text-sm font-semibold">
@@ -55,8 +75,8 @@
       </h1>
       <p class="text-lg text-slate-600 max-w-xl" data-i18n="hero_desc">شرکت مهندسی در حوزه برق و انرژی — طراحی، تأمین و اجرای پست‌های برق، خطوط انتقال و تأسیسات صنعتی با رتبه ۲ نیرو، رتبه ۵ نفت و گاز و رتبه ۵ ساختمان.</p>
       <div class="flex flex-wrap gap-3">
-        <a href="#contact" class="px-7 py-3.5 rounded-xl bg-brand-600 text-white font-semibold shadow-3d" data-i18n="hero_cta1">شروع همکاری</a>
-        <a href="#groups" class="px-7 py-3.5 rounded-xl bg-white border border-slate-200 font-semibold" data-i18n="hero_cta2">گروه‌های تخصصی</a>
+        <a href="#contact" class="px-7 py-3.5 rounded-xl bg-brand-600 text-white font-semibold shadow-3d hover:bg-brand-700 transition" data-i18n="hero_cta1">شروع همکاری</a>
+        <a href="#groups" class="px-7 py-3.5 rounded-xl bg-white border border-slate-200 font-semibold hover:border-brand-300 transition" data-i18n="hero_cta2">گروه‌های تخصصی</a>
       </div>
       <div class="flex gap-8 pt-4 border-t border-slate-200">
         <div><div class="text-2xl font-black text-brand-600">۸۰+</div><div class="text-xs text-slate-500" data-i18n="stat_projects">پروژه موفق</div></div>
@@ -65,9 +85,9 @@
         <div><div class="text-2xl font-black text-brand-600">۲۲+</div><div class="text-xs text-slate-500" data-i18n="stat_years">سال تجربه</div></div>
       </div>
     </div>
-    <div class="hidden lg:block rounded-3xl overflow-hidden shadow-3d border border-slate-200">
-      <img src="https://litter.catbox.moe/t6y9uv.jpg" alt="Power Substation" class="w-full aspect-video object-cover" />
-      <div class="p-6 bg-white grid grid-cols-3 gap-3">
+    <div class="hidden lg:block rounded-3xl overflow-hidden shadow-3d border border-slate-200 bg-white">
+      <img id="imgHero" alt="Power Substation" class="w-full aspect-video object-cover" />
+      <div class="p-6 grid grid-cols-3 gap-3">
         <div class="bg-brand-50 rounded-xl p-3 text-center"><div class="text-xs text-brand-600 font-bold" data-i18n="rank_power">رتبه نیرو</div><div class="text-2xl font-black">۲</div></div>
         <div class="bg-amber-50 rounded-xl p-3 text-center"><div class="text-xs text-amber-600 font-bold" data-i18n="rank_oil">نفت و گاز</div><div class="text-2xl font-black">۵</div></div>
         <div class="bg-emerald-50 rounded-xl p-3 text-center"><div class="text-xs text-emerald-600 font-bold" data-i18n="rank_civil">ساختمان</div><div class="text-2xl font-black">۵</div></div>
@@ -77,15 +97,15 @@
 </section>
 
 <section id="about" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
     <div class="space-y-5">
       <span class="section-badge" data-i18n="about_badge">درباره ما</span>
       <h2 class="section-title" data-i18n="about_title">شرکت مهندسین سینا گروه بهسان</h2>
       <p class="text-slate-600 leading-relaxed" data-i18n="about_p1">شرکت مهندسین سینا گروه بهسان در سال ۱۳۸۰ به شماره ثبت ۱۷۵۶۳۰ تأسیس شده و با بیش از دو دهه تجربه مدیران خود در حوزه پیمانکاری عمومی کشور و بهره‌گیری از تجارب نیروهای متخصص توانسته پروژه‌های بسیار موفقی را به انجام برساند.</p>
       <p class="text-slate-600 leading-relaxed" data-i18n="about_p2">یکی از اصلی‌ترین زمینه‌های کاری شرکت، ارائه خدمات مهندسی و مشاوره در زمینه شبکه انتقال برق، خطوط و پست‌های انتقال، مطالعات شبکه، برق‌رسانی به صنایع و تأسیسات صنعتی می‌باشد.</p>
     </div>
-    <div class="rounded-2xl overflow-hidden shadow-card">
-      <img src="https://litter.catbox.moe/uizko2.jpg" alt="Control Room" class="w-full h-full object-cover min-h-[280px]" />
+    <div class="rounded-2xl overflow-hidden shadow-card border border-slate-100">
+      <img id="imgAbout" alt="Control Room" class="w-full h-full object-cover min-h-[280px]" />
     </div>
   </div>
 </section>
@@ -98,19 +118,19 @@
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
       <div class="rounded-2xl overflow-hidden shadow-card aspect-[4/3] relative group">
-        <img src="https://litter.catbox.moe/vrr75h.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Electrical"/>
+        <img id="imgElec" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Electrical"/>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent flex items-end p-4"><span class="text-white font-bold text-sm" data-i18n="g1_title">گروه تاسیسات برقی</span></div>
       </div>
       <div class="rounded-2xl overflow-hidden shadow-card aspect-[4/3] relative group">
-        <img src="https://litter.catbox.moe/uizko2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Civil"/>
+        <img id="imgCivil" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Civil"/>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent flex items-end p-4"><span class="text-white font-bold text-sm" data-i18n="g2_title">گروه ابنیه و زیرساخت</span></div>
       </div>
       <div class="rounded-2xl overflow-hidden shadow-card aspect-[4/3] relative group">
-        <img src="https://litter.catbox.moe/zzb606.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Oil"/>
+        <img id="imgOil" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Oil"/>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent flex items-end p-4"><span class="text-white font-bold text-sm" data-i18n="g3_title">گروه گاز و پتروشیمی</span></div>
       </div>
       <div class="rounded-2xl overflow-hidden shadow-card aspect-[4/3] relative group">
-        <img src="https://litter.catbox.moe/7w87zi.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Mech"/>
+        <img id="imgMech" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Mech"/>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent flex items-end p-4"><span class="text-white font-bold text-sm" data-i18n="g4_title">گروه تاسیسات مکانیکی</span></div>
       </div>
     </div>
@@ -153,8 +173,8 @@
 
 <section id="projects" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="rounded-2xl overflow-hidden shadow-3d mb-12 max-h-64">
-      <img src="https://litter.catbox.moe/3xalok.jpg" alt="Projects" class="w-full h-64 object-cover" />
+    <div class="rounded-2xl overflow-hidden shadow-3d mb-12">
+      <img id="imgProj" alt="Projects" class="w-full h-56 sm:h-64 object-cover" />
     </div>
     <div class="text-center mb-10">
       <span class="section-badge" data-i18n="proj_badge">پروژه‌ها و کارفرمایان</span>
@@ -185,13 +205,13 @@
       </div>
     </div>
     <div class="rounded-2xl bg-white border border-slate-200 p-8 shadow-card">
-      <form id="contactForm" class="space-y-4">
+      <form id="contactForm" class="space-y-4" onsubmit="event.preventDefault(); alert(document.documentElement.lang==='fa'?'پیام ارسال شد':'Message sent');">
         <div class="grid sm:grid-cols-2 gap-4">
           <div><label class="block text-sm font-medium mb-1" data-i18n="form_name">نام</label><input class="form-input" required /></div>
           <div><label class="block text-sm font-medium mb-1" data-i18n="form_phone">تلفن</label><input class="form-input" required dir="ltr" /></div>
         </div>
         <div><label class="block text-sm font-medium mb-1" data-i18n="form_msg">پیام</label><textarea rows="4" class="form-input"></textarea></div>
-        <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 text-white font-semibold" data-i18n="form_submit">ارسال پیام</button>
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 transition" data-i18n="form_submit">ارسال پیام</button>
       </form>
     </div>
   </div>
@@ -205,5 +225,19 @@
 </footer>
 <script src="i18n.js"></script>
 <script src="script.js"></script>
+<script>
+(function(){
+  function set(id, val){ var el=document.getElementById(id); if(el && val) el.src = val; }
+  set('imgHero', window.IMG_HERO);
+  set('imgAbout', window.IMG_CIVIL);
+  set('imgElec', window.IMG_ELECTRICAL);
+  set('imgCivil', window.IMG_CIVIL);
+  set('imgOil', window.IMG_OIL);
+  set('imgMech', window.IMG_MECH);
+  set('imgProj', window.IMG_PROJECTS);
+  var bg = document.getElementById('heroBg');
+  if(bg && window.IMG_HERO) bg.style.backgroundImage = 'url('+window.IMG_HERO+')';
+})();
+</script>
 </body>
 </html>
