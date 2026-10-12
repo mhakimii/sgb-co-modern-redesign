@@ -29,7 +29,7 @@ document.getElementById("contactForm")?.addEventListener("submit", e => {
   btn.textContent = currentLang === "fa" ? "در حال ارسال..." : "Sending...";
   btn.disabled = true;
   setTimeout(() => {
-    btn.textContent = currentLang === "fa" ? "✓ ارسال شد" : "✓ Sent";
+    btn.textContent = currentLang === "fa" ? "ارسال شد" : "Sent";
     btn.style.background = "#059669";
     setTimeout(() => {
       btn.textContent = orig;
