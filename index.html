@@ -25,14 +25,14 @@
     }
   </script>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="https://web.archive.org/web/20241206171545im_/https://sgb-co.com/wp-content/uploads/2023/11/cropped-final-32x32.png" />
+  <link rel="icon" href="assets/favicon.svg" />
 </head>
 <body class="bg-slate-50 text-slate-800 font-fa antialiased">
 
 <header id="navbar" class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200/70">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-[72px]">
     <a href="#home" class="flex items-center gap-3">
-      <img src="https://web.archive.org/web/20241206171545im_/https://sgb-co.com/wp-content/uploads/2023/04/logo2.png" alt="SGB" class="h-11" onerror="this.style.display='none'" />
+      <img src="https://web.archive.org/web/20241206171545im_/https://sgb-co.com/wp-content/uploads/2023/04/logo2.png" alt="SGB" class="h-11" onerror="this.src='assets/logo.svg'" />
       <div class="hidden sm:block leading-tight">
         <div class="font-bold text-slate-900 text-sm">سینا گروه بهسان</div>
         <div class="text-[10px] text-slate-500 tracking-wider">SGB ENGINEERING</div>
@@ -64,8 +64,8 @@
 
 <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
   <div class="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-slate-100"></div>
-  <div class="absolute top-20 left-10 w-72 h-72 bg-brand-200/40 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-20 right-10 w-96 h-96 bg-energy-400/20 rounded-full blur-3xl"></div>
+  <div class="absolute inset-0 opacity-25 bg-cover bg-center" style="background-image:url('assets/Golden%20Hour%20Power%20Substation.png')"></div>
+  <div class="absolute inset-0 bg-gradient-to-l from-white via-white/90 to-white/40"></div>
   <div class="relative max-w-7xl mx-auto px-4 py-16 w-full grid lg:grid-cols-2 gap-12 items-center">
     <div class="space-y-6">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 border border-brand-200 text-brand-700 text-sm font-semibold">
@@ -88,39 +88,33 @@
         <div><div class="text-2xl font-black text-brand-600">۱۰۰+</div><div class="text-xs text-slate-500" data-i18n="stat_experts">نیروی متخصص</div></div>
       </div>
     </div>
-    <div class="relative">
-      <div class="rounded-3xl bg-white border border-slate-200 shadow-3d p-8 space-y-6">
-        <div class="flex items-center gap-4">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white text-2xl font-black">۲</div>
-          <div><div class="font-bold text-slate-900" data-i18n="rank_power">رتبه نیرو</div><div class="text-sm text-slate-500" data-i18n="rank_org">سازمان مدیریت و برنامه‌ریزی</div></div>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-energy-500 to-energy-600 flex items-center justify-center text-white text-2xl font-black">۵</div>
-          <div><div class="font-bold text-slate-900" data-i18n="rank_oil">رتبه نفت و گاز</div><div class="text-sm text-slate-500" data-i18n="rank_org">سازمان مدیریت و برنامه‌ریزی</div></div>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center text-white text-2xl font-black">۵</div>
-          <div><div class="font-bold text-slate-900" data-i18n="rank_civil">رتبه ساختمان و ابنیه</div><div class="text-sm text-slate-500" data-i18n="rank_org">سازمان مدیریت و برنامه‌ریزی</div></div>
-        </div>
-        <div class="pt-4 border-t border-slate-100 text-sm text-slate-500" data-i18n="hero_card_note">۲۲+ سال سابقه درخشان در صنعت برق کشور</div>
+    <div class="hidden lg:block rounded-3xl overflow-hidden shadow-3d border border-slate-200 bg-white">
+      <img src="assets/Golden%20Hour%20Power%20Substation.png" alt="Power Substation" class="w-full aspect-video object-cover" />
+      <div class="p-6 grid grid-cols-3 gap-3">
+        <div class="bg-brand-50 rounded-xl p-3 text-center"><div class="text-xs text-brand-600 font-bold" data-i18n="rank_power">رتبه نیرو</div><div class="text-2xl font-black">۲</div></div>
+        <div class="bg-amber-50 rounded-xl p-3 text-center"><div class="text-xs text-amber-600 font-bold" data-i18n="rank_oil">نفت و گاز</div><div class="text-2xl font-black">۵</div></div>
+        <div class="bg-emerald-50 rounded-xl p-3 text-center"><div class="text-xs text-emerald-600 font-bold" data-i18n="rank_civil">ساختمان</div><div class="text-2xl font-black">۵</div></div>
       </div>
     </div>
   </div>
 </section>
 
 <section id="about" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4">
-    <div class="max-w-3xl mb-12">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="space-y-5">
       <span class="section-badge" data-i18n="about_badge">درباره ما</span>
-      <h2 class="section-title mt-3" data-i18n="about_title">شرکت مهندسین سینا گروه بهسان</h2>
-      <p class="text-slate-600 leading-relaxed mt-4" data-i18n="about_p1">شرکت مهندسین سینا گروه بهسان در سال ۱۳۸۰ به شماره ثبت ۱۷۵۶۳۰ تأسیس شده و با بیش از دو دهه تجربه مدیران خود در حوزه پیمانکاری عمومی کشور و بهره‌گیری از تجارب نیروهای متخصص و توانمند، پروژه‌های بسیار موفقی را به انجام رسانده که همواره مورد تقدیر کارفرمایان محترم قرار گرفته است.</p>
-      <p class="text-slate-600 leading-relaxed mt-3" data-i18n="about_p2">یکی از اصلی‌ترین زمینه‌های کاری شرکت، ارائه خدمات مهندسی و مشاوره در زمینه تمامی اجزای مهم شبکه انتقال برق کشور اعم از خطوط و پست‌های انتقال، فوق توزیع و توزیع نیرو، مطالعات شبکه، طرح‌های جامع برق، برق‌رسانی به صنایع، طراحی شبکه‌ها، تأسیسات صنعتی و عمومی، سازه و ساختمان‌های ویژه می‌باشد.</p>
+      <h2 class="section-title" data-i18n="about_title">شرکت مهندسین سینا گروه بهسان</h2>
+      <p class="text-slate-600 leading-relaxed" data-i18n="about_p1">شرکت مهندسین سینا گروه بهسان در سال ۱۳۸۰ به شماره ثبت ۱۷۵۶۳۰ تأسیس شده و با بیش از دو دهه تجربه مدیران خود در حوزه پیمانکاری عمومی کشور و بهره‌گیری از تجارب نیروهای متخصص و توانمند، پروژه‌های بسیار موفقی را به انجام رسانده که همواره مورد تقدیر کارفرمایان محترم قرار گرفته است.</p>
+      <p class="text-slate-600 leading-relaxed" data-i18n="about_p2">یکی از اصلی‌ترین زمینه‌های کاری شرکت، ارائه خدمات مهندسی و مشاوره در زمینه تمامی اجزای مهم شبکه انتقال برق کشور اعم از خطوط و پست‌های انتقال، فوق توزیع و توزیع نیرو، مطالعات شبکه، طرح‌های جامع برق، برق‌رسانی به صنایع، طراحی شبکه‌ها، تأسیسات صنعتی و عمومی، سازه و ساختمان‌های ویژه می‌باشد.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+        <div class="group-card text-center py-4"><div class="text-xl font-black text-brand-600">۱۳۸۰</div><div class="text-xs text-slate-500" data-i18n="about_y1">سال تأسیس</div></div>
+        <div class="group-card text-center py-4"><div class="text-xl font-black text-brand-600">۱۷۵۶۳۰</div><div class="text-xs text-slate-500" data-i18n="about_y2">شماره ثبت</div></div>
+        <div class="group-card text-center py-4"><div class="text-xl font-black text-brand-600">۴</div><div class="text-xs text-slate-500" data-i18n="about_y3">گروه تخصصی</div></div>
+        <div class="group-card text-center py-4"><div class="text-xl font-black text-brand-600">۲۲+</div><div class="text-xs text-slate-500" data-i18n="about_y4">سال تجربه</div></div>
+      </div>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="group-card text-center"><div class="text-3xl font-black text-brand-600 mb-2">۱۳۸۰</div><div class="text-sm text-slate-500" data-i18n="about_y1">سال تأسیس</div></div>
-      <div class="group-card text-center"><div class="text-3xl font-black text-brand-600 mb-2">۱۷۵۶۳۰</div><div class="text-sm text-slate-500" data-i18n="about_y2">شماره ثبت</div></div>
-      <div class="group-card text-center"><div class="text-3xl font-black text-brand-600 mb-2">۴</div><div class="text-sm text-slate-500" data-i18n="about_y3">گروه تخصصی</div></div>
-      <div class="group-card text-center"><div class="text-3xl font-black text-brand-600 mb-2">۲۲+</div><div class="text-sm text-slate-500" data-i18n="about_y4">سال تجربه</div></div>
+    <div class="rounded-2xl overflow-hidden shadow-card border border-slate-100">
+      <img src="assets/Modern%20Control%20Room%20Overlooking%20Power%20Substation.png" alt="Control Room" class="w-full h-full object-cover min-h-[320px]" />
     </div>
   </div>
 </section>
@@ -140,58 +134,67 @@
       <h2 class="section-title mt-3" data-i18n="groups_title">چهار گروه تخصصی شرکت</h2>
       <p class="text-slate-500 mt-2" data-i18n="groups_sub">هر یک از اعضای شرکت در یکی از چهار گروه زیر فعالیت می‌کنند</p>
     </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+      <div class="rounded-2xl overflow-hidden shadow-card aspect-[4/3] relative group">
+        <img src="assets/Isometric%20Blue-White%20Electrical%20Substation.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Electrical"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 to-transparent flex items-end p-4"><span class="text-white font-bold text-sm" data-i18n="g1_title">گروه تاسیسات برقی</span></div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-card aspect-[4/3] relative group">
+        <img src="assets/Modern%20Control%20Room%20Overlooking%20Power%20Substation.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Civil"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent flex items-end p-4"><span class="text-white font-bold text-sm" data-i18n="g2_title">گروه ابنیه و زیرساخت</span></div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-card aspect-[4/3] relative group">
+        <img src="assets/Petrochemical%20Plant%20at%20Dusk.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Oil"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 to-transparent flex items-end p-4"><span class="text-white font-bold text-sm" data-i18n="g3_title">گروه گاز و پتروشیمی</span></div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-card aspect-[4/3] relative group">
+        <img src="assets/Clean%20Industrial%20Boiler%20Room.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Mech"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 to-transparent flex items-end p-4"><span class="text-white font-bold text-sm" data-i18n="g4_title">گروه تاسیسات مکانیکی</span></div>
+      </div>
+    </div>
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="group-card">
-        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-4 text-xl font-black">۱</div>
-        <h3 class="text-xl font-bold mb-3" data-i18n="g1_title">گروه تاسیسات برقی</h3>
+      <div class="group-card"><h3 class="text-xl font-bold mb-3" data-i18n="g1_title">گروه تاسیسات برقی</h3>
         <ul class="space-y-2 text-sm text-slate-600">
           <li data-i18n="g1_1">طراحی، نصب و راه‌اندازی پست‌های برق در ولتاژهای مختلف</li>
           <li data-i18n="g1_2">طراحی و نصب سیستم‌های الکتریکی واحدهای صنعتی</li>
           <li data-i18n="g1_3">نصب و راه‌اندازی خطوط انتقال و کابل‌کشی</li>
           <li data-i18n="g1_4">سیستم‌های اتوماسیون PLC و DCS</li>
           <li data-i18n="g1_5">برق اضطراری، UPS و دیزل ژنراتور</li>
-        </ul>
-      </div>
-      <div class="group-card">
-        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4 text-xl font-black">۲</div>
-        <h3 class="text-xl font-bold mb-3" data-i18n="g2_title">گروه ابنیه و زیرساخت</h3>
+        </ul></div>
+      <div class="group-card"><h3 class="text-xl font-bold mb-3" data-i18n="g2_title">گروه ابنیه و زیرساخت</h3>
         <ul class="space-y-2 text-sm text-slate-600">
           <li data-i18n="g2_1">تعیین محل احداث پست و استقرار تابلوها</li>
           <li data-i18n="g2_2">نقشه‌کشی و طراحی سازه‌های فلزی</li>
           <li data-i18n="g2_3">اجرای ساختمان پست برق</li>
           <li data-i18n="g2_4">اتاق کنترل، رله و باتری</li>
           <li data-i18n="g2_5">تأسیسات ساختمانی و نگهبانی</li>
-        </ul>
-      </div>
-      <div class="group-card">
-        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-4 text-xl font-black">۳</div>
-        <h3 class="text-xl font-bold mb-3" data-i18n="g3_title">گروه گاز و پتروشیمی</h3>
+        </ul></div>
+      <div class="group-card"><h3 class="text-xl font-bold mb-3" data-i18n="g3_title">گروه گاز و پتروشیمی</h3>
         <ul class="space-y-2 text-sm text-slate-600">
           <li data-i18n="g3_1">تأسیسات واحدهای پتروشیمی و پالایشی</li>
           <li data-i18n="g3_2">خطوط لوله نفت و گاز</li>
           <li data-i18n="g3_3">ایستگاه‌های تقویت و تقلیل فشار</li>
           <li data-i18n="g3_4">تأسیسات سرچاهی و سکوهای نفتی</li>
           <li data-i18n="g3_5">مخازن ذخیره مواد نفتی</li>
-        </ul>
-      </div>
-      <div class="group-card">
-        <div class="w-12 h-12 rounded-xl bg-violet-100 text-violet-600 flex items-center justify-center mb-4 text-xl font-black">۴</div>
-        <h3 class="text-xl font-bold mb-3" data-i18n="g4_title">گروه تاسیسات مکانیکی</h3>
+        </ul></div>
+      <div class="group-card"><h3 class="text-xl font-bold mb-3" data-i18n="g4_title">گروه تاسیسات مکانیکی</h3>
         <ul class="space-y-2 text-sm text-slate-600">
           <li data-i18n="g4_1">تصفیه خانه‌های صنعتی و فاضلاب</li>
           <li data-i18n="g4_2">سیستم‌های تهویه مطبوع HVAC</li>
           <li data-i18n="g4_3">اعلام و اطفاء حریق</li>
           <li data-i18n="g4_4">موتورخانه و حرارت مرکزی</li>
           <li data-i18n="g4_5">آبرسانی و ایستگاه‌های پمپاژ</li>
-        </ul>
-      </div>
+        </ul></div>
     </div>
   </div>
 </section>
 
 <section id="projects" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="text-center max-w-2xl mx-auto mb-12">
+    <div class="rounded-2xl overflow-hidden shadow-3d mb-12">
+      <img src="assets/Industrial%20Power%20and%20Steel%20Panorama.png" alt="Projects" class="w-full h-56 sm:h-72 object-cover" />
+    </div>
+    <div class="text-center max-w-2xl mx-auto mb-10">
       <span class="section-badge" data-i18n="proj_badge">پروژه‌ها و کارفرمایان</span>
       <h2 class="section-title mt-3" data-i18n="proj_title">نمونه پروژه‌های واقعی شرکت</h2>
       <p class="text-slate-500 mt-2" data-i18n="proj_sub">همکاری با مجتمع‌های بزرگ فولادی، پتروشیمی و صنایع مادر</p>
@@ -225,7 +228,6 @@
       <span class="px-3 py-1.5 rounded-full bg-brand-50 text-brand-700 text-xs font-semibold border border-brand-100">فولاد سنگان</span>
       <span class="px-3 py-1.5 rounded-full bg-brand-50 text-brand-700 text-xs font-semibold border border-brand-100">فولاد سفیددشت</span>
       <span class="px-3 py-1.5 rounded-full bg-brand-50 text-brand-700 text-xs font-semibold border border-brand-100">فولاد سلفچگان</span>
-      <span class="px-3 py-1.5 rounded-full bg-brand-50 text-brand-700 text-xs font-semibold border border-brand-100">فولاد بافق</span>
       <span class="px-3 py-1.5 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold border border-amber-100">پتروشیمی گچساران</span>
       <span class="px-3 py-1.5 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold border border-amber-100">پتروشیمی تهران</span>
       <span class="px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold border border-slate-200">راشا کاسپین</span>
