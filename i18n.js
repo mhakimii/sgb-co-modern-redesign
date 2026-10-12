@@ -2,6 +2,7 @@ const translations = {
   fa: {
     nav_home: "خانه", nav_about: "درباره ما", nav_groups: "گروه‌ها", nav_projects: "پروژه‌ها",
     nav_msg: "پیام مدیریت", nav_contact: "تماس", nav_cta: "مشاوره رایگان",
+    brand_name: "سینا گروه بهسان", brand_sub: "SGB ENGINEERING",
     hero_badge: "تأسیس ۱۳۸۰ · شماره ثبت ۱۷۵۶۳۰",
     hero_title_1: "شرکت مهندسین", hero_title_2: "سینا گروه بهسان",
     hero_desc: "یکی از باسابقه‌ترین شرکت‌های مهندسی برق و انرژی کشور با رتبه ۲ نیرو، رتبه ۵ نفت و گاز و رتبه ۵ ساختمان از سازمان مدیریت و برنامه‌ریزی — متخصص طراحی، تأمین و اجرای پست‌های فشار قوی و خطوط انتقال.",
@@ -55,6 +56,12 @@ const translations = {
     pr8: "خط انتقال ۱۳۲ کیلوولت دو مداره",
     pr9: "پست و شبکه توزیع ۶٫۶/۶۳ کیلوولت",
     pr10: "شبکه توزیع ۲۰، ۶٫۶ و ۰٫۴ کیلوولت",
+    cl1: "فولاد سنگان", cl2: "فولاد البرز ناب آرش", cl3: "فولاد هرمزگان جنوب",
+    cl4: "کاغذسازی راشا کاسپین", cl5: "کاغذسازی راشا کاسپین", cl6: "آب‌شیرین‌کن بندرعباس",
+    cl7: "پست ابهر", cl8: "سنگ آهن مرکزی", cl9: "گندله‌سازی مادکوش", cl10: "صنایع چوب آریا پویا (پارکو)",
+    tag1: "فولاد هرمزگان جنوب", tag2: "فولاد کاوه جنوب کیش", tag3: "فولاد البرز ناب آرش",
+    tag4: "فولاد سنگان", tag5: "فولاد سفیددشت", tag6: "پتروشیمی گچساران",
+    tag7: "پتروشیمی تهران", tag8: "راشا کاسپین", tag9: "SMS INNSE", tag10: "TAMINI ایتالیا",
     proj_note: "ساخت و نصب بیش از ۱۵۰۰ کیلومتر خط توزیع و انتقال · بیش از ۶۰ پست برق · بیش از ۸۰ پروژه انتقال نیرو",
     contact_badge: "تماس با ما", contact_title: "ارتباط با کارشناسان",
     contact_desc: "برای مشاوره، استعلام قیمت و شروع پروژه با دفتر مرکزی تهران در تماس باشید.",
@@ -63,11 +70,14 @@ const translations = {
     form_name: "نام و نام خانوادگی", form_phone: "شماره تماس", form_email: "ایمیل",
     form_msg: "پیام / شرح پروژه", form_submit: "ارسال پیام",
     footer_desc: "شرکت مهندسین سینا گروه بهسان — مهندسی برق و انرژی با بیش از دو دهه تجربه",
-    footer_copy: "© ۱۴۰۵ سینا گروه بهسان · تمامی حقوق محفوظ است"
+    footer_copy: "© ۱۴۰۵ سینا گروه بهسان · تمامی حقوق محفوظ است",
+    footer_credit: "طراحی و توسعه توسط",
+    footer_credit_name: "تیم بیت وان"
   },
   en: {
     nav_home: "Home", nav_about: "About", nav_groups: "Divisions", nav_projects: "Projects",
     nav_msg: "Management", nav_contact: "Contact", nav_cta: "Free Consultation",
+    brand_name: "Sina Group Behsan", brand_sub: "SGB ENGINEERING",
     hero_badge: "Est. 2001 · Reg. No. 175630",
     hero_title_1: "Sina Group Behsan", hero_title_2: "Engineering Company",
     hero_desc: "One of Iran's most experienced power & energy engineering firms — Rank 2 Power, Rank 5 Oil & Gas, Rank 5 Building from the Management & Planning Organization. Specialist in HV substations and transmission lines.",
@@ -121,6 +131,12 @@ const translations = {
     pr8: "Double-circuit 132 kV transmission line",
     pr9: "6.6/63 kV substation and distribution network",
     pr10: "20, 6.6 & 0.4 kV distribution network",
+    cl1: "Sangan Steel", cl2: "Alborz Nab Arash Steel", cl3: "Hormozgan South Steel",
+    cl4: "Rasha Caspian Paper", cl5: "Rasha Caspian Paper", cl6: "Bandar Abbas Desalination",
+    cl7: "Abhar Substation", cl8: "Central Iron Ore", cl9: "Madkoosh Pelletizing", cl10: "Arya Pouya Wood (Parko)",
+    tag1: "Hormozgan South Steel", tag2: "Kaveh South Kish Steel", tag3: "Alborz Nab Arash Steel",
+    tag4: "Sangan Steel", tag5: "Sefid Dasht Steel", tag6: "Gachsaran Petrochemical",
+    tag7: "Tehran Petrochemical", tag8: "Rasha Caspian", tag9: "SMS INNSE", tag10: "TAMINI Italy",
     proj_note: "Over 1,500 km of distribution & transmission lines · 60+ substations · 80+ power transmission projects",
     contact_badge: "Contact Us", contact_title: "Talk to Our Experts",
     contact_desc: "Reach our Tehran head office for consultation, quotation and project kick-off.",
@@ -129,7 +145,9 @@ const translations = {
     form_name: "Full Name", form_phone: "Phone", form_email: "Email",
     form_msg: "Message / Project Description", form_submit: "Send Message",
     footer_desc: "Sina Group Behsan Engineering Co. — Power & energy engineering with over two decades of experience",
-    footer_copy: "© 2026 Sina Group Behsan · All rights reserved"
+    footer_copy: "© 2026 Sina Group Behsan · All rights reserved",
+    footer_credit: "Designed & developed by",
+    footer_credit_name: "Bit One Team"
   }
 };
 
@@ -145,10 +163,15 @@ function setLanguage(lang) {
   if (label) label.textContent = lang === "fa" ? "EN" : "FA";
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (t[key]) el.textContent = t[key];
+    if (t[key] !== undefined) el.textContent = t[key];
   });
+  document.title = lang === "fa"
+    ? "سینا گروه بهسان | Sina Group Behsan Engineering"
+    : "Sina Group Behsan Engineering | SGB";
 }
 
 document.getElementById("langToggle")?.addEventListener("click", () => {
   setLanguage(currentLang === "fa" ? "en" : "fa");
 });
+
+document.addEventListener("DOMContentLoaded", () => setLanguage(currentLang));
