@@ -1,87 +1,15 @@
-# سینا گروه بهسان | SGB — طراحی مجدد مدرن
+# سینا گروه بهسان | Sina Group Behsan — Modern Light Corporate Redesign
 
-![SGB Modern Redesign](https://img.shields.io/badge/SGB-Modern%20Redesign-338bff?style=for-the-badge)
-![HTML/CSS/JS](https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JS%20%7C%20Tailwind-0f172a?style=for-the-badge)
-![RTL](https://img.shields.io/badge/Language-Persian%20RTL-f59e0b?style=for-the-badge)
+## Features
+- Light corporate theme with subtle 3D effects
+- Bilingual Persian / English (EN/FA toggle)
+- Original company logo
+- Full content from original website
+- Four specialized divisions + design teams + projects
 
-> **طراحی کاملاً حرفه‌ای، مدرن و خاص** برای وب‌سایت شرکت مهندسین سینا گروه بهسان (SGB)
-
----
-
-## ✨ ویژگی‌های طراحی
-
-- **تم تاریک لوکس** با گرادیان‌های آبی الکتریکی و طلایی (نماد قدرت و انرژی)
-- **رابط کاربری RTL** کامل با فونت وزیرمتن
-- **Glassmorphism** و افکت‌های مدرن
-- **انیمیشن‌های نرم** (شمارنده‌ها، reveal on scroll، hover effects)
-- **کاملاً ریسپانسیو** (موبایل، تبلت، دسکتاپ)
-- **لوگوی اختصاصی SVG** با هویت بصری مهندسی برق
-- **ناوبری ثابت** با افکت اسکرول
-- **فرم تماس** تعاملی
-- **بخش‌های کامل**: Hero، درباره ما، خدمات (۶ سرویس)، پروژه‌ها/کارفرمایان، آمار، تماس
-
----
-
-## 🏢 درباره شرکت
-
-**سینا گروه بهسان** شرکت مهندسی در حوزه برق و انرژی با:
-- رتبه **۲ نیرو**
-- رتبه **۵ نفت و گاز**
-- رتبه **۵ ساختمان و ابنیه**
-- بیش از **۲۲ سال** تجربه
-- بیش از **۸۰ پروژه** موفق
-- بیش از **۶۰ پست برق** و **۱۵۰۰ کیلومتر** خط انتقال
-
----
-
-## 🚀 اجرا
-
-فقط فایل `index.html` را در مرورگر باز کنید یا با هر سرور استاتیک سرو کنید:
-
+## Run
 ```bash
-# با Python
 python -m http.server 8080
-
-# با Node (npx)
-npx serve .
 ```
 
-سپس به آدرس `http://localhost:8080` بروید.
-
----
-
-## 📁 ساختار فایل‌ها
-
-```
-sgb-co-modern-redesign/
-├── index.html          # صفحه اصلی (Single Page)
-├── styles.css          # استایل‌های سفارشی
-├── script.js           # تعاملات و انیمیشن‌ها
-├── assets/
-│   ├── logo.svg        # لوگوی کامل
-│   └── favicon.svg     # فاویکون
-└── README.md
-```
-
----
-
-## 🎨 پالت رنگی
-
-| رنگ | کد | کاربرد |
-|-----|-----|--------|
-| Primary Blue | `#338bff` | اصلی، دکمه‌ها، لینک‌ها |
-| Accent Gold | `#f59e0b` | تأکید، انرژی |
-| Dark 950 | `#01040f` | پس‌زمینه |
-| Dark 900 | `#0f172a` | کارت‌ها |
-
----
-
-## 📌 نکات
-
-- این یک **طراحی مجدد استاتیک مدرن** است (جایگزین وردپرس + المنتور قبلی).
-- برای استفاده واقعی می‌توانید محتوا را به‌روز کنید یا به سیستم مدیریت محتوا متصل کنید.
-- آماده استقرار روی GitHub Pages، Netlify، Vercel و هر هاست استاتیک.
-
----
-
-**طراحی شده با ⚡ برای سینا گروه بهسان — ۲۰۲۶**
+https://github.com/mhakimii/sgb-co-modern-redesign
