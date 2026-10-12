@@ -1,25 +1,33 @@
-# سینا گروه بهسان | Sina Group Behsan
+# سینا گروه بهسان | SGB Modern Redesign
 
-## سایت آنلاین (GitHub Pages)
+سایت مدرن دو زبانه (فارسی / انگلیسی) شرکت مهندسین سینا گروه بهسان.
 
-بعد از فعال‌سازی Pages:
-**https://mhakimii.github.io/sgb-co-modern-redesign/**
+- **GitHub Pages:** https://mhakimii.github.io/sgb-co-modern-redesign/
+- **Repo:** https://github.com/mhakimii/sgb-co-modern-redesign
 
-### فعال‌سازی Pages
-1. Settings → Pages
-2. Source: Deploy from a branch
-3. Branch: `main` / folder: `/ (root)`
-4. Save
+## استقرار یک‌کلیکی روی Cloudflare Pages
 
-### آپلود تصاویر
-پوشه `assets/images/` را از فایل `sgb-images.zip` در ریپو آپلود کنید:
-- GitHub → Add file → Upload files → کل تصاویر داخل `assets/images/`
+1. وارد [Cloudflare Dashboard](https://dash.cloudflare.com) شو → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
+2. GitHub را وصل کن و ریپوی `mhakimii/sgb-co-modern-redesign` را انتخاب کن
+3. تنظیمات:
+   - **Framework preset:** None
+   - **Build command:** *(خالی بگذار)*
+   - **Build output directory:** `/`  یا خالی
+   - **Root directory:** `/`
+4. **Save and Deploy**
 
-تصاویر فعلی در HTML از لینک موقت هم قابل نمایش‌اند.
+بعد از دیپلوی می‌توانی دامنه سفارشی (مثلاً `sgb-co.com`) را در بخش Custom domains اضافه کنی.
 
-### ویژگی‌ها
-- تم روشن شرکتی + افکت سه‌بعدی
-- دو زبانه FA / EN
-- لوگوی اصلی شرکت
-- محتوای کامل سایت اصلی
-- تصاویر حرفه‌ای پست برق، پتروشیمی، موتورخانه، کنترل روم
+فایل‌های `_headers` و `_redirects` برای کش و امنیت از قبل آماده هستند.
+
+## ساختار
+
+```
+index.html   — صفحه اصلی
+styles.css   — استایل
+script.js    — منو، اسکرول، فرم
+i18n.js      — ترجمه فارسی/انگلیسی
+assets/      — تصاویر و لوگو
+```
+
+طراحی و توسعه: [تیم بیت وان](https://bit-one.ir)
